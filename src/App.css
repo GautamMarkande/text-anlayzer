@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+.App{
+  padding: 2vh 2vw;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.appContainer{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 2vh;
 }
-
-.App-link {
-  color: #61dafb;
+.heading{
+  color: rgba(52, 64, 84, 1);
+  font-size: 4.5vw;
+  padding: 0;
+  margin: 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info{
+  font-size: 2.5vw;
+  padding: 0;
+  margin: 0;
+  color: rgba(52, 64, 84, 1);
+}
+.tabsContainer{
+  background-color:rgba(249, 250, 251, 1);
+  display: flex;
+  border: 0.5px solid rgba(128, 128, 128, 0.619);
+    width: 50vw;
+    padding: 4px;
+    border-radius: 10px;
+}
+.wordTab,.paraTab{
+  flex: 1;
+  border: none;
+  background-color: inherit;
+  font-size: 2.2vw;
+  padding: 4px;
+  font-weight: bold;
+  color: rgba(52, 64, 84, 1);
+}
+.active{
+  flex: 1;
+  border-radius:9px; 
+  border: 0.2px solid rgb(220, 215, 215);
+  background-color: white;  
+  font-size: 2.2vw;
+  padding: 4px;
+  font-weight: bold;
+  color: rgba(52, 64, 84, 1);
+}
+.inputtext{
+  font-size: 2.2vw;
+  border-radius: 10px;
+  padding: 10px;
+}
+table{
+  border-collapse: collapse;
+}
+th{
+  color: rgba(52, 64, 84, 1);
+}
+td,th{
+  text-align: left;
+  font-size: 1.5vw;
+  background-color: white;
+  border-collapse: collapse;
+  border:1px solid lightgray;
+  padding: 10px;
 }
